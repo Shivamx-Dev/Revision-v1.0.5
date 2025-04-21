@@ -1,4 +1,3 @@
-# Revision-v1.0.5
 # Revision v1.0.5 - Optimized Personal Blog WordPress Theme
 
 ![687474703a2f2f636c6f75642e636f6465737570706c792e636f2f7468656d65666f726573742f7265766973696f6e2f6374612e6a70673f763d322e31](https://github.com/user-attachments/assets/0bd8ddcd-b19f-4aff-b9bb-d3153bbd2391)
