@@ -1,0 +1,31 @@
+{
+    "$schema": "https:\/\/schemas.wp.org\/trunk\/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "defaultPalette": false,
+            "gradients": [
+                {
+                    "slug": "primary-gradient",
+                    "gradient": "var(--cs-color-button)",
+                    "name": "Primary Gradient"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "824px",
+            "wideSize": "1248px"
+        },
+        "shadow": {
+            "defaultPresets": false,
+            "presets": [
+                {
+                    "name": "Standard",
+                    "slug": "standard",
+                    "shadow": "0 5px 25px 0 var(--cs-palete-box-shadow)"
+                }
+            ]
+        }
+    }
+}

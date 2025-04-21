@@ -1,0 +1,21 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_revision">
+			<key name="home_hero_heading" />
+			<key name="home_hero_subheading" />
+			<key name="home_categories_heading" />
+			<key name="header_search_heading" />
+			<key name="header_custom_button_label" />
+			<key name="footer_text" />
+			<key name="footer_copyright" />
+			<key name="misc_social_1_label" />
+			<key name="misc_social_2_label" />
+			<key name="misc_social_3_label" />
+			<key name="misc_social_4_label" />
+			<key name="misc_social_5_label" />
+			<key name="misc_subscribe_heading" />
+			<key name="misc_subscribe_description" />
+			<key name="misc_subscribe_short_description" />
+		</key>
+	</admin-texts>
+</wpml-config>

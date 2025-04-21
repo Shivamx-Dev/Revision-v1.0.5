@@ -1,0 +1,365 @@
+/* Theme Dashboard */
+.cs-theme-dashboard .button {
+	transition: 0.25s;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.cs-theme-dashboard .cs-button {
+	padding: 6px 22px;
+}
+.cs-theme-dashboard .cs-button:not(:hover) {
+	background: transparent;
+}
+.cs-theme-dashboard .cs-button-primary {
+	padding: 6px 22px;
+}
+.cs-theme-dashboard .cs-separator {
+	background: #F0F0F0;
+	height: 1px;
+	margin-bottom: 2rem;
+}
+.cs-theme-dashboard .cs-title {
+	font-weight: 600;
+	font-size: 0.8125rem;
+	color: #1E1E1E;
+}
+.cs-theme-dashboard .cs-heading {
+	font-weight: 600;
+	font-size: 1rem;
+	color: #1E1E1E;
+}
+.cs-theme-dashboard .cs-description {
+	font-size: 0.8125rem;
+	color: #697B96;
+}
+.cs-theme-dashboard .cs-description:not(:first-child) {
+	margin-top: 1rem;
+}
+.cs-theme-dashboard .cs-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 6px;
+	border-radius: 9px;
+	text-transform: uppercase;
+}
+.cs-theme-dashboard .cs-badge-success {
+	background: #DEF3ED;
+	color: #3FB28F;
+}
+.cs-theme-dashboard .cs-badge-info {
+	background: #007CBA;
+	color: #FFFFFF;
+}
+.cs-theme-dashboard .cs-badge-warning {
+	background: #F8E4E4;
+	color: #F58787;
+}
+.cs-theme-dashboard .cs-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #FFFFFF;
+	margin: 0 0 0 -20px;
+	margin-bottom: 20px;
+	padding: 0 24px;
+}
+.cs-theme-dashboard .cs-header .cs-header-left {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.cs-theme-dashboard .cs-header .cs-header-right {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.cs-theme-dashboard .cs-header .cs-header-col {
+	display: flex;
+	align-items: center;
+	border-right: 1px solid #f0f0f0;
+	padding: 0 24px;
+	height: 100%;
+	min-height: 60px;
+}
+.cs-theme-dashboard .cs-header .cs-header-col:first-child {
+	padding-left: 0;
+}
+.cs-theme-dashboard .cs-header .cs-header-col-logo {
+	border-right: none;
+}
+.cs-theme-dashboard .cs-header .cs-logo a {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.25rem;
+	color: #000000;
+	text-decoration: none;
+}
+.cs-theme-dashboard .cs-header .cs-logo a:focus {
+	box-shadow: none;
+}
+.cs-theme-dashboard .cs-header .cs-link-documentation {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.cs-theme-dashboard .cs-header .cs-link-documentation:hover span {
+	text-decoration: underline;
+}
+.cs-theme-dashboard .cs-header .cs-link-documentation i {
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	margin-left: 0.5rem;
+}
+.cs-theme-dashboard .cs-hero {
+	background: #FFFFFF;
+	display: flex;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-hello {
+	margin-top: 1rem;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #1E1E1E;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-title {
+	margin-top: 1rem;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 1.2;
+	color: #1E1E1E;
+}
+.cs-theme-dashboard .cs-hero .cs-badge {
+	transform: translateY(-10px);
+	font-weight: normal;
+	font-size: 0.8125rem;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-desc {
+	margin-top: 1rem;
+	color: #1E1E1E;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-go {
+	margin-top: 1.5rem;
+	padding: 6px 22px;
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.cs-theme-dashboard .cs-hero .cs-hero-notion {
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+	color: #697B96;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-warning {
+	margin-top: 0.5rem;
+	color: #dc3232;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-content {
+	padding: 24px;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-image {
+	display: none;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-image span {
+	position: relative;
+	display: inline-block;
+}
+.cs-theme-dashboard .cs-hero .cs-hero-image img {
+	display: block;
+	zoom: 0.5;
+}
+@media (min-width: 1360px) {
+	.cs-theme-dashboard .cs-hero .cs-hero-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+}
+.cs-theme-dashboard .cs-main {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.cs-theme-dashboard .cs-main-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 100%;
+	max-width: 100%;
+	width: 100%;
+}
+.cs-theme-dashboard .cs-main-content .cs-hero {
+	margin-top: 0;
+	margin-bottom: 20px;
+	max-width: 100%;
+	width: 100%;
+}
+.cs-theme-dashboard .cs-main-content .form-table {
+	margin-top: 0;
+}
+.cs-theme-dashboard .cs-main-content .form-table th {
+	padding: 12px 10px 12px 0;
+}
+.cs-theme-dashboard .cs-main-content .form-table td {
+	padding: 12px 10px;
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-main-content {
+		flex: 1 0 calc(100% - 296px);
+		max-width: calc(100% - 296px);
+		width: 100%;
+		margin-right: 20px;
+	}
+}
+.cs-theme-dashboard .cs-main-sidebar {
+	flex: 1 0 100%;
+	max-width: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-main-sidebar {
+		flex: 1 0 276px;
+		max-width: 276px;
+		width: 100%;
+		margin-top: 0;
+	}
+}
+.cs-theme-dashboard .cs-panel {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	border-radius: 0px 0px 2px 2px;
+	border-radius: 2px;
+}
+.cs-theme-dashboard .cs-panel + .cs-panel {
+	margin-top: 20px;
+}
+.cs-theme-dashboard .cs-panel .cs-panel-head {
+	padding: 16px 24px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.cs-theme-dashboard .cs-panel .cs-panel-title {
+	font-size: 0.8125rem;
+	margin: 0;
+}
+.cs-theme-dashboard .cs-panel .cs-panel-content {
+	height: 100%;
+	padding: 24px;
+}
+.cs-theme-dashboard .cs-panel-tabs {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-panel-tabs {
+		flex-direction: row;
+	}
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-panel-tabs .cs-panel-tab {
+		margin: -16px 0;
+		margin-right: 40px;
+		border-bottom: 4px solid transparent;
+	}
+}
+.cs-theme-dashboard .cs-panel-tabs .cs-panel-tab a {
+	display: block;
+	padding: 14px 16px;
+	color: inherit;
+	text-decoration: none;
+	box-shadow: none;
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-panel-tabs .cs-panel-tab a {
+		display: inline-block;
+		padding: 16px 0;
+	}
+}
+.cs-theme-dashboard .cs-panel-tabs .cs-panel-tab-active {
+	background: #f8f9fd;
+	border-radius: 2px;
+}
+@media (min-width: 960px) {
+	.cs-theme-dashboard .cs-panel-tabs .cs-panel-tab-active {
+		background: transparent;
+		border-color: #007CBA;
+		border-radius: 0;
+	}
+}
+.cs-theme-dashboard .cs-panel-content-tabs .cs-panel-tab {
+	display: none;
+}
+.cs-theme-dashboard .cs-panel-content-tabs .cs-panel-tab.cs-panel-tab-active {
+	display: block;
+}
+.cs-theme-dashboard .cs-panel-general {
+	flex: 1;
+	max-width: 100%;
+	width: 100%;
+}
+.cs-theme-dashboard .cs-panel-support .cs-button-wrap {
+	margin-top: auto;
+	padding-top: 1rem;
+}
+.cs-theme-dashboard .cs-panel-community .cs-button-wrap {
+	margin-top: auto;
+	padding-top: 1rem;
+}
+.cs-theme-dashboard .cs-panel-changelog .cs-panel-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cs-theme-dashboard .cs-panel-changelog .cs-changelog-link {
+	display: inline-block;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.cs-theme-dashboard .cs-panel-changelog .cs-changelog-link:hover {
+	text-decoration: underline;
+}
+
+.notice.cs-theme-dashboard-notice {
+	margin: 20px 0;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+	background: transparent;
+}
+.notice.cs-theme-dashboard-notice + .notice.updated {
+	display: none;
+}
+
+.cs-activation .cs-activation-postbox {
+	margin-left: -24px;
+	margin-right: -2px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.cs-activation .cs-activation-postbox + .cs-activation-postbox {
+	border-top: 1px solid #f0f0f0;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+.cs-activation .cs-theme-license-msg {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.cs-activation .cs-theme-license-form {
+	max-width: 864px;
+}
+.cs-activation .cs-theme-license-updates {
+	display: flex;
+}
+.cs-activation .cs-theme-license-newsletter {
+	margin: 10px 15px 0 0;
+}
+.cs-activation .cs-theme-license-supported_until {
+	color: red;
+}
+/*# sourceMappingURL=theme-dashboard.css.map */

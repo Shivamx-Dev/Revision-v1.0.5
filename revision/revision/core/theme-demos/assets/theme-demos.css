@@ -1,0 +1,601 @@
+/* Demos Page */
+.cs-demos-page .button {
+	transition: 0.25s;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.cs-demos-page .cs-button {
+	padding: 6px 22px;
+}
+.cs-demos-page .cs-button:not(:hover) {
+	background: transparent;
+}
+.cs-demos-page .cs-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 6px;
+	border-radius: 9px;
+	text-transform: uppercase;
+}
+.cs-demos-page .cs-badge-success {
+	background: #DEF3ED;
+	color: #3FB28F;
+}
+.cs-demos-page .cs-badge-info {
+	background: #007CBA;
+	color: #FFFFFF;
+}
+.cs-demos-page .cs-badge-warning {
+	background: #F8E4E4;
+	color: #F58787;
+}
+.cs-demos-page .cs-switcher {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+.cs-demos-page .cs-switcher .cs-switch {
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	height: 1.75rem;
+	height: 18px;
+	padding: 0;
+	position: relative;
+	vertical-align: middle;
+	width: 36px;
+	margin-left: 0.5rem;
+	border-radius: 9px;
+}
+.cs-demos-page .cs-switcher .cs-switch .cs-switch-slider {
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	z-index: 1;
+	background: #000000;
+	border-radius: 50%;
+	transition: left 0.25s ease;
+}
+.cs-demos-page .cs-switcher .cs-tooltip {
+	position: absolute;
+	top: calc(100% + 5px);
+	right: 0;
+	min-width: 150px;
+	max-width: 200px;
+	text-align: center;
+	padding: 4px 8px;
+	font-size: 12px;
+	background: #1E1E1E;
+	color: #FFF;
+	border-radius: 2px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 4;
+}
+.cs-demos-page .cs-switcher .cs-tooltip-desc {
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	min-width: 150px;
+	max-width: 200px;
+	text-align: center;
+	padding: 4px 8px;
+	font-size: 12px;
+	background: #1E1E1E;
+	color: #FFF;
+	border-radius: 2px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 4;
+}
+.cs-demos-page .cs-switcher .cs-checkbox {
+	position: absolute;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+	appearance: none;
+}
+.cs-demos-page .cs-switcher .cs-checkbox[readony], .cs-demos-page .cs-switcher .cs-checkbox:disabled {
+	opacity: 0;
+}
+.cs-demos-page .cs-switcher .cs-checkbox[readony] ~ .cs-switch, .cs-demos-page .cs-switcher .cs-checkbox:disabled ~ .cs-switch {
+	opacity: 0.5;
+}
+.cs-demos-page .cs-switcher .cs-checkbox[readony]:hover ~ .cs-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+.cs-demos-page .cs-switcher .cs-checkbox:checked ~ .cs-switch {
+	border-color: #007dba;
+	background: #007dba;
+}
+.cs-demos-page .cs-switcher .cs-checkbox:checked ~ .cs-switch .cs-switch-slider {
+	background: #FFFFFF;
+	top: 3px;
+	left: calc(50% + 4px);
+}
+.cs-demos-page .cs-switcher .cs-tooltip-help {
+	position: relative;
+	z-index: 3;
+	margin-right: auto;
+	cursor: pointer;
+}
+.cs-demos-page .cs-switcher .cs-tooltip-help:hover {
+	color: #2271b1;
+}
+.cs-demos-page .cs-switcher .cs-tooltip-help:hover ~ .cs-tooltip-desc {
+	opacity: 1;
+	visibility: visible;
+}
+.cs-demos-page .cs-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #FFFFFF;
+	margin: 0 0 0 -20px;
+	margin-bottom: 20px;
+	padding: 0 24px;
+}
+.cs-demos-page .cs-header .cs-header-left {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.cs-demos-page .cs-header .cs-header-right {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.cs-demos-page .cs-header .cs-header-col {
+	display: flex;
+	align-items: center;
+	border-right: 1px solid #f0f0f0;
+	padding: 0 24px;
+	height: 100%;
+	min-height: 60px;
+}
+.cs-demos-page .cs-header .cs-header-col:first-child {
+	padding-left: 0;
+}
+.cs-demos-page .cs-header .cs-header-col-logo {
+	border-right: none;
+}
+.cs-demos-page .cs-header .cs-header-col-logo:only-child {
+	border-right: none;
+}
+@media (min-width: 960px) {
+	.cs-demos-page .cs-header .cs-header-col-logo {
+		border-right: 1px solid #f0f0f0;
+	}
+}
+.cs-demos-page .cs-header .cs-logo a {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+.cs-demos-page .cs-header .cs-logo a:focus {
+	box-shadow: none;
+}
+.cs-demos-page .cs-demos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	grid-gap: 20px;
+	margin-top: 20px;
+}
+.cs-demos-page .cs-demos .cs-demo-item {
+	display: none;
+	background: #FFFFFF;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.cs-demos-page .cs-demos .cs-demo-item:not([data-preview=false]) {
+	cursor: pointer;
+}
+.cs-demos-page .cs-demos .cs-demo-item.cs-demo-item-active {
+	display: block;
+}
+.cs-demos-page .cs-demos .cs-demo-thumbnail {
+	background: #ededed;
+	position: relative;
+}
+.cs-demos-page .cs-demos .cs-demo-thumbnail:before {
+	display: table;
+	width: 0;
+	height: 100%;
+	padding-bottom: 56%;
+	content: "";
+}
+.cs-demos-page .cs-demos .cs-demo-thumbnail img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+.cs-demos-page .cs-demos .cs-demo-preview {
+	background: rgba(255, 255, 255, 0.75);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.cs-demos-page .cs-demos .cs-demo-preview span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 40px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 3px;
+	font-size: 13px;
+	color: #FFFFFF;
+	transition: background-color 0.5s;
+}
+.cs-demos-page .cs-demos .cs-demo-item:hover .cs-demo-preview {
+	opacity: 1;
+}
+.cs-demos-page .cs-demos .cs-demo-data {
+	border-top: 1px solid #ededed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 16px;
+}
+.cs-demos-page .cs-demos .cs-demo-info {
+	display: flex;
+	align-items: center;
+}
+.cs-demos-page .cs-demos .cs-demo-name {
+	font-weight: 600;
+}
+.cs-demos-page .cs-demos .cs-demo-badge {
+	margin-left: 0.5rem;
+}
+.cs-demos-page .cs-demos .cs-demo-actions {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.cs-demos-page .cs-demos .cs-demo-actions .button {
+	padding: 2px 16px;
+}
+.cs-demos-page .cs-demos .cs-demo-item:hover .cs-demo-actions {
+	opacity: 1;
+}
+.cs-demos-page .cs-import-theme {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.75);
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999999;
+	opacity: 0;
+	padding: 20px;
+	transition: 0.5s opacity 0s, 0s visibility 0.5s;
+}
+.cs-import-theme-active .cs-demos-page .cs-import-theme {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s opacity 0s, 0s visibility 0s;
+}
+.cs-import-theme-active .cs-demos-page .cs-import-theme .cs-import-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.cs-demos-page .cs-import-theme .cs-import-popup {
+	position: relative;
+	background: #FFFFFF;
+	width: 100%;
+	max-width: 320px;
+	box-shadow: 0px 16px 32px -8px rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.cs-demos-page .cs-import-theme .cs-import-header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 12px 24px;
+	font-weight: 600;
+	color: #1E1E1E;
+}
+.cs-demos-page .cs-import-theme .cs-import-subheader {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #697B96;
+}
+.cs-demos-page .cs-import-theme .cs-import-kits {
+	margin-top: 1rem;
+}
+.cs-demos-page .cs-import-theme .cs-import-kits form:first-child .cs-switcher {
+	margin-top: 0;
+}
+.cs-demos-page .cs-import-theme .cs-kits-header {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #697B96;
+}
+.cs-demos-page .cs-import-theme .cs-msg-warning {
+	font-size: 11px;
+	margin-top: 0.5rem;
+	color: #dc3232;
+}
+.cs-demos-page .cs-import-theme .cs-import-step {
+	display: none;
+}
+.cs-demos-page .cs-import-theme .cs-import-step-active {
+	display: flex;
+	flex-direction: column;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-plugins {
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-content {
+	border-top: 1px solid #f0f0f0;
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-content:first-child {
+	border-top: none;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-load {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-load:after {
+	animation: spin 4s linear infinite;
+	font-family: "dashicons";
+	font-size: 2rem;
+	content: "\f113";
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-msg-warning {
+	margin: 0;
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-actions {
+	display: flex;
+	justify-content: flex-end;
+	border-top: 1px solid #f0f0f0;
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-start .cs-import-actions .button {
+	padding: 6px 22px;
+	margin-right: 0.4rem;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-output {
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-desc {
+	color: #1E1E1E;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress {
+	margin-top: 2rem;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress-label {
+	font-size: 12px;
+	color: #697B96;
+	margin-bottom: 0.25rem;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress-label:empty {
+	display: none;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress-bar {
+	position: relative;
+	width: 100%;
+	height: 4px;
+	background: #F0F0F0;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress-indicator {
+	--cs-indicator: 0%;
+	background: #007CBA;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: var(--cs-indicator);
+}
+.cs-demos-page .cs-import-theme .cs-import-process .cs-import-progress-sublabel {
+	margin-top: 0.5rem;
+	font-size: 10px;
+	color: #007CBA;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-info {
+	padding: 76px 24px 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-logo svg {
+	display: block;
+	margin: 0 auto;
+	fill: #DEF3ED;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-title {
+	margin-top: 2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	color: #1E1E1E;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-desc {
+	margin-top: 1rem;
+	text-align: center;
+	color: #1E1E1E;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-customize {
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-customize .button {
+	padding: 6px 22px;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid #f0f0f0;
+	padding: 24px;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-actions .cs-link {
+	margin-right: 1rem;
+	text-decoration: none;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-actions .cs-link:hover {
+	text-decoration: underline;
+}
+.cs-demos-page .cs-import-theme .cs-import-finish .cs-import-actions .button {
+	padding: 6px 22px;
+}
+.cs-demos-page .cs-import-theme-active {
+	overflow: hidden;
+}
+.cs-demos-page .cs-preview {
+	display: flex;
+	flex-direction: column;
+	background: #f1f1f1;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999998;
+	opacity: 0;
+	transition: 0.5s opacity 0s, 0s visibility 0.5s;
+}
+.cs-preview-active .cs-demos-page .cs-preview {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s opacity 0s, 0s visibility 0s;
+}
+.cs-demos-page .cs-preview .cs-preview-iframe {
+	width: 100%;
+	height: 100%;
+}
+.cs-demos-page .cs-preview .cs-header {
+	margin: 0;
+	box-shadow: inset 0px -1px 0px #F0F0F0;
+	padding-left: 0px;
+}
+@media (min-width: 960px) {
+	.cs-demos-page .cs-preview .cs-header {
+		padding-left: 24px;
+	}
+}
+.cs-demos-page .cs-preview .cs-header .button {
+	padding: 5px 22px;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #000000;
+	transition: 0.25s;
+	padding: 0 24px;
+	height: 100%;
+	outline: none;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow:hover {
+	background: #f8f9fa;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow:focus {
+	box-shadow: none;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow:before {
+	font-family: "dashicons";
+	font-size: 18px;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow.cs-inactive {
+	color: #CCCCCC;
+	cursor: default;
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow.cs-prev-demo:before {
+	content: "\f341";
+}
+.cs-demos-page .cs-preview .cs-header .cs-arrow.cs-next-demo:before {
+	content: "\f345";
+}
+.cs-demos-page .cs-preview .cs-header .cs-header-logo {
+	display: none;
+}
+@media (min-width: 960px) {
+	.cs-demos-page .cs-preview .cs-header .cs-header-logo {
+		display: flex;
+	}
+}
+.cs-demos-page .cs-preview .cs-header .cs-header-info {
+	display: none;
+	border-right: none;
+}
+@media (min-width: 960px) {
+	.cs-demos-page .cs-preview .cs-header .cs-header-info {
+		display: flex;
+	}
+}
+.cs-demos-page .cs-preview .cs-header .cs-header-arrow {
+	padding: 0;
+}
+.cs-demos-page .cs-preview .cs-header .cs-demo-name {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #000000;
+}
+.cs-demos-page .cs-preview .cs-header .cs-preview-cancel {
+	margin-right: 0.5rem;
+}
+.cs-demos-page .cs-preview .cs-header .cs-preview-cancel .button:not(:hover) {
+	background: transparent;
+}
+.cs-demos-page .cs-preview-active {
+	overflow: hidden;
+}
+/*# sourceMappingURL=theme-demos.css.map */
